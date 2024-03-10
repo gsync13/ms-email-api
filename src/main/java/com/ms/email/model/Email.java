@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name = "TB_EMAIL")
+@Table(name = "EMAIL")
 public class Email implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -24,5 +24,5 @@ public class Email implements Serializable {
     @Column(columnDefinition = "TEXT")//consegue inserir mais caracteres do que o padrão
     private String text;
     private LocalDateTime sendDateEmail;
-    private EmailStatus statusEmail;
+    private String statusEmail;
 }
